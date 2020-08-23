@@ -1,0 +1,86 @@
+﻿<Window x:Class="TamGiaoMng.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TamGiaoMng"
+        mc:Ignorable="d"
+        Title="Tam Giao Restaurent" Height="900" Width="1200">
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top" VerticalAlignment="Stretch" Height="60" HorizontalAlignment="Stretch" Background="DimGray" Orientation="Vertical">
+            <Menu>
+                <MenuItem>
+                    <MenuItem.Header>
+                        <TextBlock Text="Quản lý chung" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                    </MenuItem.Header>
+                    <MenuItem.Icon>
+                        <Image Source="Icon/menu_manager.png"/>
+                    </MenuItem.Icon>
+                    <MenuItem Header="_Nhân viên" x:Name="menuEmployee" Click="MenuEmployee_Click">
+                        <MenuItem.Icon>
+                            <Image Source="Icon/menu_employee.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="_Khách hàng">
+                        <MenuItem.Icon>
+                            <Image Source="Icon/menu_customer.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="_Nhà cung cấp">
+                        <MenuItem.Icon>
+                            <Image Source="Icon/menu_supplier.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <Separator />
+                    <MenuItem Header="_Thoát">
+                        <MenuItem.Icon>
+                            <Image Source="Icon/menu_exit.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem Header="_Kho" Margin="5,0,0,0">
+                    <MenuItem Header="_Nhập kho">
+                        <MenuItem.Icon>
+                            <Image Source="Icon/menu_employee.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="_Xuất kho" />
+                    <MenuItem Header="_Tồn kho" />
+                </MenuItem>
+                <MenuItem Header="_Kho" Margin="5,0,0,0">
+                    <MenuItem.Icon>
+                        <Image Source="Icon/menu_employee.png"/>
+                    </MenuItem.Icon>
+                    <MenuItem Header="_Nhập kho">
+                        <MenuItem.Icon>
+                            <Image Source="Icon/menu_employee.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="_Xuất kho" />
+                    <MenuItem Header="_Tồn kho" />
+                </MenuItem>
+            </Menu>
+
+        </StackPanel>
+        <TabControl x:Name="tabMain" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <TabControl.Resources>
+                <Style TargetType="{x:Type TabItem}">
+                    <Setter Property="Header" Value="{Binding TabHeader}" />
+                    <Setter Property="HeaderTemplate">
+                        <Setter.Value>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="{Binding}" FontSize="12" FontFamily="Tahoma" FontWeight="SemiBold" />
+                                    <Button Height="10" Tag="{Binding DataContext, RelativeSource={RelativeSource AncestorType=TabItem}}" BorderThickness="0" Margin="5,0,0,0"
+                                            Click="Button_Close_Tab_Click">
+                                        <Image x:Name="imgCloseTabItem" Source="Icon/close_red.png" Width="10" Height="10" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                                    </Button>
+                                </StackPanel>
+                            </DataTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TabControl.Resources>
+        </TabControl>
+    </DockPanel>
+</Window>

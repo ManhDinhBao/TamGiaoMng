@@ -1,0 +1,273 @@
+﻿<UserControl x:Class="TamGiaoMng.View.Setting.ucGenSetup_Tab1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TamGiaoMng.View.Setting"
+             mc:Ignorable="d" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+    <StackPanel HorizontalAlignment="Stretch" Orientation="Vertical" Background="White">
+        <!--Thông tin nhà hàng-->
+        <StackPanel Orientation="Horizontal" Background="LightGray" Height="30" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+            <TextBlock Text="Thông tin nhà hàng" FontFamily="Tahoma" FontSize="12" FontWeight="SemiBold" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0"/>
+            <Button Height="20" Margin="15,0,0,0" BorderThickness="0" Background="LightGray">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
+                    <Image Source="/Icon/menu_edit.png" Width="15" Height="15"/>
+                    <TextBlock Text="Sửa" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+            <Button Height="20" Margin="10,0,0,0" BorderThickness="0" Background="LightGray">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
+                    <Image Source="/Icon/menu_save.png" Width="15" Height="15"/>
+                    <TextBlock Text="Lưu" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+            <Button Height="20" Margin="10,0,0,0" BorderThickness="0" Background="LightGray">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
+                    <Image Source="/Icon/menu_restore.png" Width="15" Height="15"/>
+                    <TextBlock Text="Quay lại" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+            <StackPanel Orientation="Vertical" VerticalAlignment="Stretch" HorizontalAlignment="Left" Margin="10,5,0,0">
+                <TextBlock>
+                        <TextBlock Text="Tên nhà hàng" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                        <TextBlock Text="(*)" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Foreground="Red"/>
+                    </TextBlock>
+                <TextBlock Text="Loại hình nhà hàng" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="0,5,0,0"/>
+                <TextBlock Text="Phong cách ẩm thực" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="0,5,0,0"/>
+                <TextBlock Text="Số điện thoại" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="0,5,0,0"/>
+                <TextBlock Text="Mã số thuế" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="0,5,0,0"/>
+                <TextBlock Margin="0,5,0,0">
+                        <TextBlock Text="Địa chỉ" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                        <TextBlock Text="(*)" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Foreground="Red"/>
+                    </TextBlock >
+                <TextBlock Margin="0,5,0,0">
+                        <TextBlock Text="Quốc gia" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                        <TextBlock Text="(*)" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Foreground="Red"/>
+                    </TextBlock>
+                <TextBlock Text="Tỉnh/ Thành phố" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="0,5,0,0"/>
+                <TextBlock Text="Đường phố" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="0,5,0,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" VerticalAlignment="Stretch" HorizontalAlignment="Left" Margin="10,5,0,0">
+                <TextBox MinWidth="400" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Foreground="Black" HorizontalAlignment="Stretch"/>
+                <TextBox MinWidth="400" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Foreground="Black" Margin="0,3,0,0" HorizontalAlignment="Stretch"/>
+                <TextBox MinWidth="400" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Foreground="Black" Margin="0,3,0,0" HorizontalAlignment="Stretch"/>
+                <TextBox Width="100" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Foreground="Black" Margin="0,3,0,0" HorizontalAlignment="Left"/>
+                <TextBox Width="100" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Foreground="Black" Margin="0,3,0,0" HorizontalAlignment="Left"/>
+                <TextBox MinWidth="400" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Foreground="Black" Margin="0,3,0,0" HorizontalAlignment="Stretch"/>
+                <TextBox Width="80"  FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Foreground="Black" Margin="0,3,0,0" HorizontalAlignment="Left"/>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Center">
+                    <TextBox Width="80" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Foreground="Black" Margin="0,3,0,0" HorizontalAlignment="Left"/>
+                    <TextBlock Text="Quận/Huyện" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="15,3,0,0"/>
+                    <TextBox Width="80" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Foreground="Black" Margin="5,3,0,0" HorizontalAlignment="Left"/>
+                    <TextBlock Text="Phường/Xã" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="15,3,0,0"/>
+                    <TextBox Width="80" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Foreground="Black" Margin="5,3,0,0" HorizontalAlignment="Left"/>
+                </StackPanel>
+                <TextBox MinWidth="400" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Foreground="Black" Margin="0,3,0,0" HorizontalAlignment="Stretch"/>
+            </StackPanel>
+        </StackPanel>
+        <!--Đồng tiền sử dụng-->
+        <StackPanel Orientation="Horizontal" Background="LightGray" Height="30" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0,10,0,0">
+            <TextBlock Text="Đồng tiền sử dụng" FontFamily="Tahoma" FontSize="12" FontWeight="SemiBold" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0"/>
+            <Button Height="20" Margin="15,0,0,0" BorderThickness="0" Background="LightGray">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
+                    <Image Source="/Icon/menu_edit.png" Width="15" Height="15"/>
+                    <TextBlock Text="Sửa" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+            <Button Height="20" Margin="10,0,0,0" BorderThickness="0" Background="LightGray">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
+                    <Image Source="/Icon/menu_save.png" Width="15" Height="15"/>
+                    <TextBlock Text="Lưu" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+            <Button Height="20" Margin="10,0,0,0" BorderThickness="0" Background="LightGray">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
+                    <Image Source="/Icon/menu_restore.png" Width="15" Height="15"/>
+                    <TextBlock Text="Quay lại" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+            <StackPanel Orientation="Vertical" VerticalAlignment="Stretch" HorizontalAlignment="Left" Margin="10,0,0,0">
+                <TextBlock MinWidth="100" Text="Loại tiền" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="0,5,0,0"/>
+                <TextBlock MinWidth="100" Text="Ký hiệu" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="0,5,0,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" VerticalAlignment="Stretch" HorizontalAlignment="Left" Margin="10,5,0,0">
+                <TextBox Width="100" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Foreground="Black" HorizontalAlignment="Left"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBox MinWidth="50" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Foreground="Black" Margin="0,3,0,0" HorizontalAlignment="Left"/>
+                    <TextBlock Margin="5,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" >
+                            <TextBlock Text="Lưu ý:" FontFamily="Tahoma" FontSize="10" FontWeight="Bold"/>
+                            <TextBlock Text="Ký hiệu sẽ được hiển thị trên hóa đơn bán hàng. Bỏ trống nếu không muốn hiển thị" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" FontStyle="Italic"/>
+                        </TextBlock>
+                </StackPanel>
+
+            </StackPanel>
+        </StackPanel>
+        <!--Quy tắc đánh mã món ăn/đồ uống-->
+        <StackPanel Orientation="Horizontal" Background="LightGray" Height="30" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0,10,0,0">
+            <TextBlock Text="Quy tắc đánh mã món ăn/đồ uống" FontFamily="Tahoma" FontSize="12" FontWeight="SemiBold" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0"/>
+            <Button Height="20" Margin="15,0,0,0" BorderThickness="0" Background="LightGray">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
+                    <Image Source="/Icon/menu_edit.png" Width="15" Height="15"/>
+                    <TextBlock Text="Sửa" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+            <Button Height="20" Margin="10,0,0,0" BorderThickness="0" Background="LightGray">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
+                    <Image Source="/Icon/menu_save.png" Width="15" Height="15"/>
+                    <TextBlock Text="Lưu" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+            <Button Height="20" Margin="10,0,0,0" BorderThickness="0" Background="LightGray">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
+                    <Image Source="/Icon/menu_restore.png" Width="15" Height="15"/>
+                    <TextBlock Text="Quay lại" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch">
+            <CheckBox Margin="5,5,0,0">
+                <TextBlock Text="Sử dụng quy tắc sinh mã món theo hệ thống" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+            </CheckBox>
+            <TextBlock Margin="30,5,0,0">
+                    <TextBlock Text="Ưu tiên 1:" FontFamily="Tahoma" FontSize="10" FontWeight="Bold"/>
+                    <TextBlock Text="Lấy chữ cái đầu tiên của các từ trong tên món (Ví dụ: món Gà rang muối có mã là GRM)" FontFamily="Tahoma" FontSize="10" FontWeight="Regular"/>                    
+                </TextBlock>
+            <TextBlock Margin="30,5,0,0">
+                    <TextBlock Text="Ưu tiên 2:" FontFamily="Tahoma" FontSize="10" FontWeight="Bold"/>
+                    <TextBlock Text="Nếu trùng với các món đã có trong hệ thống thì: Lấy 2 chữ cái đầu (Ví dụ: GARAMU)" FontFamily="Tahoma" FontSize="10" FontWeight="Regular"/>                    
+                </TextBlock>
+            <TextBlock Margin="30,5,0,0">
+                    <TextBlock Text="Ưu tiên 3:" FontFamily="Tahoma" FontSize="10" FontWeight="Bold"/>
+                    <TextBlock Text="Nếu trùng với các món đã có trong hệ thống thì: Lấy hết tên món viết liền không dấu (Ví dụ: GARANGMUOI)" FontFamily="Tahoma" FontSize="10" FontWeight="Regular"/>                    
+                </TextBlock>
+        </StackPanel>
+        <!--Định dạng số-->
+        <StackPanel Orientation="Horizontal" Background="LightGray" Height="30" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0,10,0,0">
+            <TextBlock Text="Định dạng số" FontFamily="Tahoma" FontSize="12" FontWeight="SemiBold" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0"/>
+            <Button Height="20" Margin="15,0,0,0" BorderThickness="0" Background="LightGray">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
+                    <Image Source="/Icon/menu_edit.png" Width="15" Height="15"/>
+                    <TextBlock Text="Sửa" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+            <Button Height="20" Margin="10,0,0,0" BorderThickness="0" Background="LightGray">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
+                    <Image Source="/Icon/menu_save.png" Width="15" Height="15"/>
+                    <TextBlock Text="Lưu" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+            <Button Height="20" Margin="10,0,0,0" BorderThickness="0" Background="LightGray">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
+                    <Image Source="/Icon/menu_restore.png" Width="15" Height="15"/>
+                    <TextBlock Text="Quay lại" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+            <StackPanel Orientation="Vertical" VerticalAlignment="Stretch" HorizontalAlignment="Left" Margin="10,0,0,0">
+                <TextBlock MinWidth="100" Text="Dấu ngăn cách hàng nghìn" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="0,5,0,0"/>
+                <TextBlock MinWidth="100" Text="Dấu ngăn cách hàng thập phân" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="0,5,0,0"/>
+                <TextBlock MinWidth="100" Text="Số chữ số hàng thập phân" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="0,5,0,0"/>
+                <TextBlock MinWidth="100" Text="Số lượng" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="10,5,0,0"/>
+                <TextBlock MinWidth="100" Text="Đơn giá" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="10,5,0,0"/>
+                <TextBlock MinWidth="100" Text="Thành tiền" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="10,5,0,0"/>
+                <TextBlock MinWidth="100" Text="Hệ số, tỷ lệ" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="10,5,0,0"/>
+                <TextBlock MinWidth="100" Text="Cách hiển thị số âm" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="0,5,0,0"/>
+
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" VerticalAlignment="Stretch" HorizontalAlignment="Left" Margin="10,5,0,0">
+                <TextBox Width="100" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Foreground="Black" HorizontalAlignment="Left"/>
+                <TextBox Width="100" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Foreground="Black" Margin="0,3,0,0" HorizontalAlignment="Left"/>
+                <TextBlock Width="100" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Foreground="Black" Margin="0,3,0,0" HorizontalAlignment="Left"/>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="0,3,0,0">
+                    <TextBox Width="100" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Foreground="Black" HorizontalAlignment="Left"/>
+                    <TextBlock Margin="5,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" >
+                            <TextBlock Text="Ví dụ:" FontFamily="Tahoma" FontSize="10" FontWeight="Bold"/>
+                            <TextBlock Text="1.234.586,00" FontFamily="Tahoma" FontSize="10" FontWeight="Regular"/>
+                        </TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="0,3,0,0">
+                    <TextBox Width="100" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Foreground="Black" HorizontalAlignment="Left"/>
+                    <TextBlock Margin="5,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" >
+                            <TextBlock Text="Ví dụ:" FontFamily="Tahoma" FontSize="10" FontWeight="Bold"/>
+                            <TextBlock Text="1.234.586,00" FontFamily="Tahoma" FontSize="10" FontWeight="Regular"/>
+                        </TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="0,3,0,0">
+                    <TextBox Width="100" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Foreground="Black" HorizontalAlignment="Left"/>
+                    <TextBlock Margin="5,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" >
+                            <TextBlock Text="Ví dụ:" FontFamily="Tahoma" FontSize="10" FontWeight="Bold"/>
+                            <TextBlock Text="1.234.586,00" FontFamily="Tahoma" FontSize="10" FontWeight="Regular"/>
+                        </TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="0,3,0,0">
+                    <TextBox Width="100" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Foreground="Black" HorizontalAlignment="Left"/>
+                    <TextBlock Margin="5,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" >
+                            <TextBlock Text="Ví dụ:" FontFamily="Tahoma" FontSize="10" FontWeight="Bold"/>
+                            <TextBlock Text="1.234.586,00" FontFamily="Tahoma" FontSize="10" FontWeight="Regular"/>
+                        </TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="0,3,0,0">
+                    <TextBox Width="100" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Foreground="Black" HorizontalAlignment="Left"/>
+                    <TextBlock Margin="5,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" >
+                            <TextBlock Text="Ví dụ:" FontFamily="Tahoma" FontSize="10" FontWeight="Bold"/>
+                            <TextBlock Text="1.234.586,00" FontFamily="Tahoma" FontSize="10" FontWeight="Regular"/>
+                        </TextBlock>
+                </StackPanel>
+                <TextBlock Margin="0,5,0,0" VerticalAlignment="Center" HorizontalAlignment="Left">
+                        <TextBlock Text="Lưu ý:" FontFamily="Tahoma" FontSize="10" FontWeight="Bold"/>
+                        <TextBlock Text="Khi thay đổi chữ số hàng thập phân có thể ảnh hướng tới tính chính xác của dữ liệu trước đó" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" FontStyle="Italic"/>
+                    </TextBlock>
+            </StackPanel>
+        </StackPanel>
+        <!--Định ngày giờ-->
+        <StackPanel Orientation="Horizontal" Background="LightGray" Height="30" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0,10,0,0">
+            <TextBlock Text="Định dạng ngày giờ" FontFamily="Tahoma" FontSize="12" FontWeight="SemiBold" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0"/>
+            <Button Height="20" Margin="15,0,0,0" BorderThickness="0" Background="LightGray">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
+                    <Image Source="/Icon/menu_edit.png" Width="15" Height="15"/>
+                    <TextBlock Text="Sửa" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+            <Button Height="20" Margin="10,0,0,0" BorderThickness="0" Background="LightGray">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
+                    <Image Source="/Icon/menu_save.png" Width="15" Height="15"/>
+                    <TextBlock Text="Lưu" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+            <Button Height="20" Margin="10,0,0,0" BorderThickness="0" Background="LightGray">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
+                    <Image Source="/Icon/menu_restore.png" Width="15" Height="15"/>
+                    <TextBlock Text="Quay lại" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+            <StackPanel Orientation="Vertical" VerticalAlignment="Stretch" HorizontalAlignment="Left" Margin="10,0,0,0">
+                <TextBlock MinWidth="100" Text="Dấu ngăn cách hàng nghìn" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="0,5,0,0"/>
+                <TextBlock MinWidth="100" Text="Dấu ngăn cách hàng thập phân" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="0,5,0,0"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" VerticalAlignment="Stretch" HorizontalAlignment="Left" Margin="10,5,0,0">
+                <TextBox Width="100" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Foreground="Black" HorizontalAlignment="Left"/>
+                <TextBox Width="100" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Foreground="Black" Margin="0,3,0,0" HorizontalAlignment="Left"/>
+
+            </StackPanel>
+            <StackPanel Orientation="Vertical" VerticalAlignment="Stretch" HorizontalAlignment="Left" Margin="0,3,0,0">
+                <TextBlock>
+                        <TextBlock Text="Ví dụ: " FontFamily="Tahoma" FontSize="10" FontWeight="Bold" Margin="5,4,0,0"/>
+                        <TextBlock MinWidth="100" Text="22/08/2020" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" Margin="0,4,0,0"/>
+                    </TextBlock>
+                <TextBlock>
+                        <TextBlock Text="Ví dụ: " FontFamily="Tahoma" FontSize="10" FontWeight="Bold" Margin="5,4,0,0"/>
+                        <TextBlock MinWidth="100" Text="09:38" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" Margin="0,5,0,0"/>
+                    </TextBlock>
+            </StackPanel>
+        </StackPanel>
+    </StackPanel>
+</UserControl>

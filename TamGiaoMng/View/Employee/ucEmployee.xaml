@@ -1,0 +1,106 @@
+﻿<UserControl x:Class="TamGiaoMng.View.Employee.ucEmployee"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TamGiaoMng.View.Employee"
+             mc:Ignorable="d" 
+             HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+    <StackPanel HorizontalAlignment="Stretch" Orientation="Vertical" Background="White">
+        <StackPanel Orientation="Horizontal" Background="LightGray" Height="30" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+            <Button Height="20" Margin="15,0,0,0" BorderThickness="0" Background="LightGray">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
+                    <Image Source="/Icon/menu_add.png" Width="15" Height="15"/>
+                    <TextBlock Text="Thêm" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+            <Button Height="20" Margin="5,0,0,0" BorderThickness="0" Background="LightGray">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
+                    <Image Source="/Icon/menu_search.png" Width="15" Height="15"/>
+                    <TextBlock Text="Tìm kiếm" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+            <Button Height="20" Margin="5,0,0,0" BorderThickness="0" Background="LightGray">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
+                    <Image Source="/Icon/menu_edit.png" Width="15" Height="15"/>
+                    <TextBlock Text="Sửa" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+            <Button Height="20" Margin="10,0,0,0" BorderThickness="0" Background="LightGray">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
+                    <Image Source="/Icon/menu_save.png" Width="15" Height="15"/>
+                    <TextBlock Text="Lưu" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+            <Button Height="20" Margin="10,0,0,0" BorderThickness="0" Background="LightGray">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
+                    <Image Source="/Icon/menu_refresh.png" Width="15" Height="15"/>
+                    <TextBlock Text="Cập nhật" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Background="LightGray" Height="30" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="10,10,10,0">
+            <TextBlock Text="Tên đăng nhập" Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="10" FontWeight="Bold" FontFamily="Tahoma" Margin="10,0,0,0"></TextBlock>
+            <TextBlock Text="Tên nhân viên" Width="300" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="10" FontWeight="Bold" FontFamily="Tahoma" Margin="10,0,0,0"></TextBlock>
+            <TextBlock Text="Số điện thoại" Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="10" FontWeight="Bold" FontFamily="Tahoma" Margin="10,0,0,0"></TextBlock>
+            <TextBlock Text="Ngày sinh" Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="10" FontWeight="Bold" FontFamily="Tahoma" Margin="10,0,0,0"></TextBlock>
+            <TextBlock Text="Giới tính" Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="10" FontWeight="Bold" FontFamily="Tahoma" Margin="10,0,0,0"></TextBlock>
+            <TextBlock Text="Trạng thái làm việc" Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="10" FontWeight="Bold" FontFamily="Tahoma" Margin="10,0,0,0"></TextBlock>
+
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Background="White" Height="30" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="10,0,10,0">
+            <TextBox Width="100" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="10,0,0,0"/>
+            <TextBox Width="300" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="10,0,0,0"/>
+            <TextBox Width="100" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="10,0,0,0"/>
+            <DatePicker Width="100" Margin="10,0,0,0" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <DatePicker.Resources>
+                    <Style TargetType="{x:Type DatePickerTextBox}">
+                        <Setter Property="Control.Template">
+                            <Setter.Value>
+                                <ControlTemplate>
+                                    <TextBox x:Name="PART_TextBox" TextAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" VerticalAlignment="Center"
+                                    Text="{Binding Path=SelectedDate, RelativeSource={RelativeSource AncestorType={x:Type DatePicker}}}" />
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </DatePicker.Resources>
+            </DatePicker>
+            <ComboBox Width="100" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="10,0,0,0">
+                <ComboBox.Style>
+                    <Style TargetType="ComboBox">
+                        <Setter Property="Background" Value="White" />
+                    </Style>
+                </ComboBox.Style>
+                <ComboBoxItem>Nam</ComboBoxItem>
+                <ComboBoxItem>Nữ</ComboBoxItem>
+                <ComboBoxItem>Khác</ComboBoxItem>
+            </ComboBox>
+            <ComboBox Width="100" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="10,0,0,0">
+                <ComboBox.Style>
+                    <Style TargetType="ComboBox">
+                        <Setter Property="Background" Value="White" />
+                    </Style>
+                </ComboBox.Style>
+                <ComboBoxItem>Thử việc</ComboBoxItem>
+                <ComboBoxItem>Chính thức</ComboBoxItem>
+                <ComboBoxItem>Đã nghỉ làm</ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+        <DataGrid>
+            <DataGrid.Columns>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock FontSize="12" FontWeight="Bold" FontFamily="Tahoma" Text="Tên đăng nhập" Margin="5" />
+                                <TextBox FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="5,0,5,0" Text="manh"/>
+                            </StackPanel>
+                            
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </StackPanel>
+</UserControl>

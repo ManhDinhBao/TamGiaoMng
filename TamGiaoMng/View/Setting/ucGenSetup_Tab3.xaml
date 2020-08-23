@@ -1,0 +1,144 @@
+﻿<UserControl x:Class="TamGiaoMng.View.Setting.ucGenSetup_Tab3"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TamGiaoMng.View.Setting"
+             mc:Ignorable="d" 
+             HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+    <StackPanel HorizontalAlignment="Stretch" Orientation="Vertical" Background="White">
+        <StackPanel Orientation="Horizontal" Background="LightGray" Height="30" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+            <Button Height="20" Margin="10,0,0,0" BorderThickness="0" Background="LightGray">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
+                    <Image Source="/Icon/menu_edit.png" Width="15" Height="15"/>
+                    <TextBlock Text="Sửa" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+            <Button Height="20" Margin="10,0,0,0" BorderThickness="0" Background="LightGray">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
+                    <Image Source="/Icon/menu_save.png" Width="15" Height="15"/>
+                    <TextBlock Text="Lưu" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+            <Button Height="20" Margin="10,0,0,0" BorderThickness="0" Background="LightGray">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
+                    <Image Source="/Icon/menu_restore.png" Width="15" Height="15"/>
+                    <TextBlock Text="Quay lại" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Background="LightGray" Height="30" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="10,10,10,10">
+            <TextBlock Text="Loại chứng từ" Width="150" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Bold" FontFamily="Tahoma" Margin="10,0,0,0"></TextBlock>
+            <TextBlock Text="Tiền tố" Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Bold" FontFamily="Tahoma" Margin="50,0,0,0"></TextBlock>
+            <TextBlock Text="Độ dài phần số" Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Bold" FontFamily="Tahoma" Margin="50,0,0,0"></TextBlock>
+            <TextBlock Text="Hậu tố" Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Bold" FontFamily="Tahoma" Margin="50,0,0,0"></TextBlock>
+            <TextBlock Text="Khởi đầu" Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Bold" FontFamily="Tahoma" Margin="50,0,0,0"></TextBlock>
+            <TextBlock Text="Hiển thị" Width="200" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Bold" FontFamily="Tahoma" Margin="50,0,0,0"></TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="10,0,10,10">
+            <TextBlock Text="Nhập kho" Width="150" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="10,0,0,0"></TextBlock>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="200" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="10,0,10,10">
+            <TextBlock Text="Xuất kho" Width="150" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="10,0,0,0"></TextBlock>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="200" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="10,0,10,10">
+            <TextBlock Text="Chuyển kho" Width="150" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="10,0,0,0"></TextBlock>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="200" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="10,0,10,10">
+            <TextBlock Text="Kiểm kê kho" Width="150" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="10,0,0,0"></TextBlock>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="200" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="10,0,10,10">
+            <TextBlock Text="Phiếu báo hàng" Width="150" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="10,0,0,0"></TextBlock>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="200" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="10,0,10,10">
+            <TextBlock Text="Đơn đặt hàng" Width="150" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="10,0,0,0"></TextBlock>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="200" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="10,0,10,10">
+            <TextBlock Text="Thu tiền mặt" Width="150" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="10,0,0,0"></TextBlock>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="200" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="10,0,10,10">
+            <TextBlock Text="Chi tiền mặt" Width="150" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="10,0,0,0"></TextBlock>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="200" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="10,0,10,10">
+            <TextBlock Text="Chi phí" Width="150" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="10,0,0,0"></TextBlock>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="200" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="10,0,10,10">
+            <TextBlock Text="Khách hàng" Width="150" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="10,0,0,0"></TextBlock>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="200" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="10,0,10,10">
+            <TextBlock Text="Nhà cung cấp" Width="150" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="10,0,0,0"></TextBlock>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="200" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="10,0,10,10">
+            <TextBlock Text="Nhân viên" Width="150" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="10,0,0,0"></TextBlock>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="200" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="10,0,10,20">
+            <TextBlock Text="Thực đơn" Width="150" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="10,0,0,0"></TextBlock>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+            <TextBox Width="200" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="50,0,0,0"></TextBox>
+        </StackPanel>
+    </StackPanel>
+    
+</UserControl>
