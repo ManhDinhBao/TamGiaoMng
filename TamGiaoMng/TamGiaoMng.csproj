@@ -55,8 +55,20 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="View\Employee\ucEmpContactInfo.xaml.cs">
+      <DependentUpon>ucEmpContactInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Employee\ucEmpGeneralInfo.xaml.cs">
+      <DependentUpon>ucEmpGeneralInfo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Employee\ucEmployee.xaml.cs">
       <DependentUpon>ucEmployee.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Employee\ucEmployeeInfo.xaml.cs">
+      <DependentUpon>ucEmployeeInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Employee\ucEmpOtherInfo.xaml.cs">
+      <DependentUpon>ucEmpOtherInfo.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Setting\ucGeneralSetup.xaml.cs">
       <DependentUpon>ucGeneralSetup.xaml</DependentUpon>
@@ -82,7 +94,23 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="View\Employee\ucEmpContactInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Employee\ucEmpGeneralInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\Employee\ucEmployee.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Employee\ucEmployeeInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Employee\ucEmpOtherInfo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -155,6 +183,8 @@
   <ItemGroup>
     <Resource Include="Icon\menu_save.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Icon\eye.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

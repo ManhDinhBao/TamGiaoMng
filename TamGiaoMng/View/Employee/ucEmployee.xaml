@@ -7,6 +7,7 @@
              mc:Ignorable="d" 
              HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
     <StackPanel HorizontalAlignment="Stretch" Orientation="Vertical" Background="White">
+        <!--Điều khiển-->
         <StackPanel Orientation="Horizontal" Background="LightGray" Height="30" HorizontalAlignment="Stretch" VerticalAlignment="Top">
             <Button Height="20" Margin="15,0,0,0" BorderThickness="0" Background="LightGray">
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
@@ -39,62 +40,15 @@
                 </StackPanel>
             </Button>
         </StackPanel>
-        <StackPanel Orientation="Horizontal" Background="LightGray" Height="30" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="10,10,10,0">
-            <TextBlock Text="Tên đăng nhập" Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="10" FontWeight="Bold" FontFamily="Tahoma" Margin="10,0,0,0"></TextBlock>
-            <TextBlock Text="Tên nhân viên" Width="300" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="10" FontWeight="Bold" FontFamily="Tahoma" Margin="10,0,0,0"></TextBlock>
-            <TextBlock Text="Số điện thoại" Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="10" FontWeight="Bold" FontFamily="Tahoma" Margin="10,0,0,0"></TextBlock>
-            <TextBlock Text="Ngày sinh" Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="10" FontWeight="Bold" FontFamily="Tahoma" Margin="10,0,0,0"></TextBlock>
-            <TextBlock Text="Giới tính" Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="10" FontWeight="Bold" FontFamily="Tahoma" Margin="10,0,0,0"></TextBlock>
-            <TextBlock Text="Trạng thái làm việc" Width="100" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="10" FontWeight="Bold" FontFamily="Tahoma" Margin="10,0,0,0"></TextBlock>
-
-        </StackPanel>
-        <StackPanel Orientation="Horizontal" Background="White" Height="30" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="10,0,10,0">
-            <TextBox Width="100" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="10,0,0,0"/>
-            <TextBox Width="300" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="10,0,0,0"/>
-            <TextBox Width="100" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="10,0,0,0"/>
-            <DatePicker Width="100" Margin="10,0,0,0" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Center">
-                <DatePicker.Resources>
-                    <Style TargetType="{x:Type DatePickerTextBox}">
-                        <Setter Property="Control.Template">
-                            <Setter.Value>
-                                <ControlTemplate>
-                                    <TextBox x:Name="PART_TextBox" TextAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" VerticalAlignment="Center"
-                                    Text="{Binding Path=SelectedDate, RelativeSource={RelativeSource AncestorType={x:Type DatePicker}}}" />
-                                </ControlTemplate>
-                            </Setter.Value>
-                        </Setter>
-                    </Style>
-                </DatePicker.Resources>
-            </DatePicker>
-            <ComboBox Width="100" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="10,0,0,0">
-                <ComboBox.Style>
-                    <Style TargetType="ComboBox">
-                        <Setter Property="Background" Value="White" />
-                    </Style>
-                </ComboBox.Style>
-                <ComboBoxItem>Nam</ComboBoxItem>
-                <ComboBoxItem>Nữ</ComboBoxItem>
-                <ComboBoxItem>Khác</ComboBoxItem>
-            </ComboBox>
-            <ComboBox Width="100" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="10,0,0,0">
-                <ComboBox.Style>
-                    <Style TargetType="ComboBox">
-                        <Setter Property="Background" Value="White" />
-                    </Style>
-                </ComboBox.Style>
-                <ComboBoxItem>Thử việc</ComboBoxItem>
-                <ComboBoxItem>Chính thức</ComboBoxItem>
-                <ComboBoxItem>Đã nghỉ làm</ComboBoxItem>
-            </ComboBox>
-        </StackPanel>
+        <!--Dữ liệu-->
         <DataGrid Margin="10">
             <DataGrid.Columns>
                 <DataGridTemplateColumn>
                     <DataGridTemplateColumn.HeaderTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Vertical">
-                                <TextBlock MinWidth="100" FontSize="12" FontWeight="Bold" FontFamily="Tahoma" Text="Tên đăng nhập" Margin="5" />
-                                <TextBox FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="5,0,5,0" Text="manh"/>
+                                <TextBlock MinWidth="100" FontSize="10" FontWeight="Bold" FontFamily="Tahoma" Text="Tên đăng nhập" Margin="5" />
+                                <TextBox FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="5,0,5,0"/>
                             </StackPanel>
                         </DataTemplate>
                     </DataGridTemplateColumn.HeaderTemplate>
@@ -103,8 +57,8 @@
                     <DataGridTemplateColumn.HeaderTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Vertical">
-                                <TextBlock MinWidth="250" FontSize="12" FontWeight="Bold" FontFamily="Tahoma" Text="Tên nhân viên" Margin="5" />
-                                <TextBox FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="5,0,5,0" Text="manh"/>
+                                <TextBlock MinWidth="250" FontSize="10" FontWeight="Bold" FontFamily="Tahoma" Text="Tên nhân viên" Margin="5" />
+                                <TextBox FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="5,0,5,0"/>
                             </StackPanel>
                         </DataTemplate>
                     </DataGridTemplateColumn.HeaderTemplate>
@@ -113,8 +67,8 @@
                     <DataGridTemplateColumn.HeaderTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Vertical">
-                                <TextBlock MinWidth="100" FontSize="12" FontWeight="Bold" FontFamily="Tahoma" Text="Số điện thoại" Margin="5" />
-                                <TextBox FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="5,0,5,0" Text="manh"/>
+                                <TextBlock MinWidth="100" FontSize="10" FontWeight="Bold" FontFamily="Tahoma" Text="Số điện thoại" Margin="5" />
+                                <TextBox FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="5,0,5,0"/>
                             </StackPanel>
                         </DataTemplate>
                     </DataGridTemplateColumn.HeaderTemplate>
@@ -123,15 +77,15 @@
                     <DataGridTemplateColumn.HeaderTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Vertical">
-                                <TextBlock MinWidth="100" FontSize="12" FontWeight="Bold" FontFamily="Tahoma" Text="Ngày sinh" Margin="5" />
-                                <DatePicker Width="100" Margin="5,0,5,0" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Center">
+                                <TextBlock MinWidth="100" FontSize="10" FontWeight="Bold" FontFamily="Tahoma" Text="Ngày sinh" Margin="5" />
+                                <DatePicker MinWidth="100" Margin="5,0,0,0" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Center">
                                     <DatePicker.Resources>
                                         <Style TargetType="{x:Type DatePickerTextBox}">
                                             <Setter Property="Control.Template">
                                                 <Setter.Value>
                                                     <ControlTemplate>
-                                                        <TextBox x:Name="PART_TextBox" TextAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" VerticalAlignment="Center"
-                                    Text="{Binding Path=SelectedDate, RelativeSource={RelativeSource AncestorType={x:Type DatePicker}}}" />
+                                                        <TextBox x:Name="PART_TextBox" TextAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma"
+                                    Text="{Binding Path=SelectedDate, StringFormat={}{0:dd/MM/yyyy}, RelativeSource={RelativeSource AncestorType={x:Type DatePicker}}}" />
                                                     </ControlTemplate>
                                                 </Setter.Value>
                                             </Setter>
@@ -146,7 +100,7 @@
                     <DataGridTemplateColumn.HeaderTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Vertical">
-                                <TextBlock MinWidth="100" FontSize="12" FontWeight="Bold" FontFamily="Tahoma" Text="Giới tính" Margin="5" />
+                                <TextBlock MinWidth="100" FontSize="10" FontWeight="Bold" FontFamily="Tahoma" Text="Giới tính" Margin="5" />
                                 <ComboBox Width="100" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="5,0,0,0">
                                     <ComboBox.Style>
                                         <Style TargetType="ComboBox">
@@ -165,9 +119,9 @@
                 <DataGridTemplateColumn>
                     <DataGridTemplateColumn.HeaderTemplate>
                         <DataTemplate>
-                            <StackPanel Orientation="Vertical">
-                                <TextBlock MinWidth="100" FontSize="12" FontWeight="Bold" FontFamily="Tahoma" Text="Trạng thái làm việc" Margin="5" />
-                                <ComboBox Width="100" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="5,0,0,0">
+                            <StackPanel Orientation="Vertical" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                                <TextBlock MinWidth="100" FontSize="10" FontWeight="Bold" FontFamily="Tahoma" Text="Trạng thái làm việc" Margin="5" />
+                                <ComboBox MinWidth="100" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="5,0,0,0">
                                     <ComboBox.Style>
                                         <Style TargetType="ComboBox">
                                             <Setter Property="Background" Value="White" />

@@ -1,0 +1,144 @@
+﻿<UserControl x:Class="TamGiaoMng.View.Employee.ucEmpGeneralInfo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TamGiaoMng.View.Employee"
+             mc:Ignorable="d" 
+             HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+    <StackPanel Orientation="Horizontal" Background="White" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <StackPanel Orientation="Vertical" Background="White" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10">
+            <!--Data-->
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <StackPanel Orientation="Horizontal"  Margin="0,5,0,0">
+                    <TextBlock MinWidth="150" VerticalAlignment="Center">
+                        <TextBlock Text="Mã nhân viên" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                        <TextBlock Text="(*)" Foreground="Red" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                    </TextBlock>
+                    <TextBox VerticalAlignment="Center" MinWidth="100" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="5,0,0,0"/>
+                    <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Text="Dùng làm tên đăng nhập hệ thống, có thể dùng số điện thoại hoặc email cho dễ nhớ." FontFamily="Tahoma" FontSize="10" FontStyle="Italic" FontWeight="Regular" Margin="5,0,0,0"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                    <TextBlock MinWidth="150" VerticalAlignment="Center" Text="Email" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                    <TextBox VerticalAlignment="Center" MinWidth="200" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="5,0,0,0"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                    <TextBlock MinWidth="150" VerticalAlignment="Center" Text="Số điện thoại" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                    <TextBox VerticalAlignment="Center" MinWidth="200" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="5,0,0,0"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal"  Margin="0,5,0,0">
+                    <TextBlock MinWidth="150" VerticalAlignment="Center">
+                        <TextBlock Text="Họ và tên" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                        <TextBlock Text="(*)" Foreground="Red" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                    </TextBlock>
+                    <TextBox Width="407" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="5,0,0,0"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                    <TextBlock MinWidth="150" VerticalAlignment="Center" Text="Giới tính" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                    <ComboBox VerticalAlignment="Center" MinWidth="200" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="5,0,0,0">
+                        <ComboBoxItem>Nam</ComboBoxItem>
+                        <ComboBoxItem>Nữ</ComboBoxItem>
+                        <ComboBoxItem>Khác</ComboBoxItem>
+                    </ComboBox>
+                    <TextBlock Width="60" VerticalAlignment="Center" Text="Ngày sinh" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="20,0,0,0"/>
+                    <DatePicker MinWidth="150" Margin="5,0,0,0" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Center">
+                        <DatePicker.Resources>
+                            <Style TargetType="{x:Type DatePickerTextBox}">
+                                <Setter Property="Control.Template">
+                                    <Setter.Value>
+                                        <ControlTemplate>
+                                            <TextBox x:Name="PART_TextBox" TextAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma"
+                                    Text="{Binding Path=SelectedDate, StringFormat={}{0:dd/MM/yyyy}, RelativeSource={RelativeSource AncestorType={x:Type DatePicker}}}" />
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </DatePicker.Resources>
+                    </DatePicker>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                    <TextBlock MinWidth="150" VerticalAlignment="Center" Text="Số CMND" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                    <TextBox VerticalAlignment="Center" MinWidth="200" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="5,0,0,0"/>
+                    <TextBlock Width="60" VerticalAlignment="Center" Text="Ngày cấp" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="20,0,0,0"/>
+                    <DatePicker MinWidth="150" Margin="5,0,0,0" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Center">
+                        <DatePicker.Resources>
+                            <Style TargetType="{x:Type DatePickerTextBox}">
+                                <Setter Property="Control.Template">
+                                    <Setter.Value>
+                                        <ControlTemplate>
+                                            <TextBox x:Name="PART_TextBox" TextAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma"
+                                    Text="{Binding Path=SelectedDate, StringFormat={}{0:dd/MM/yyyy}, RelativeSource={RelativeSource AncestorType={x:Type DatePicker}}}" />
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </DatePicker.Resources>
+                    </DatePicker>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                    <TextBlock MinWidth="150" VerticalAlignment="Center" Text="Nơi cấp CMND" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                    <TextBox VerticalAlignment="Center" MinWidth="407" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="5,0,0,0"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal"  Margin="0,5,0,0">
+                    <TextBlock MinWidth="150" VerticalAlignment="Center">
+                        <TextBlock Text="Họ và tên" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                        <TextBlock Text="(*)" Foreground="Red" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                    </TextBlock>
+                    <RadioButton Content="Quản lý" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="5,0,0,0"/>
+                    <RadioButton Content="Nhân viên" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="30,0,0,0"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                    <TextBlock MinWidth="150" VerticalAlignment="Center">
+                        <TextBlock Text="Trạng thái làm việc" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                        <TextBlock Text="(*)" Foreground="Red" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                    </TextBlock>
+                    <ComboBox VerticalAlignment="Center" MinWidth="200" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="5,0,0,0">
+                        <ComboBoxItem>Thử việc</ComboBoxItem>
+                        <ComboBoxItem>Chính thức</ComboBoxItem>
+                        <ComboBoxItem>Đã nghỉ việc</ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                    <TextBlock MinWidth="150" VerticalAlignment="Center">
+                        <TextBlock Text="Mật khẩu" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                        <TextBlock Text="(*)" Foreground="Red" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                    </TextBlock>
+                    <PasswordBox MinWidth="200" Margin="5,0,0,0">
+                        <PasswordBox.Template>
+                            <ControlTemplate>
+                                <Grid>
+                                    <Grid.ColumnDefinitions></Grid.ColumnDefinitions>
+                                    <PasswordBox Grid.Column="0" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" PasswordChar="*" />
+                                    <Button BorderThickness="0" Background="Transparent" HorizontalAlignment="Right" Width="15" Grid.Column="1">
+                                        <Image Source="/Icon/eye.png"/>
+                                    </Button>
+                                </Grid>
+                            </ControlTemplate>
+                        </PasswordBox.Template>
+                    </PasswordBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                    <TextBlock MinWidth="150" VerticalAlignment="Center">
+                        <TextBlock Text="Xác nhận mật khẩu" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                        <TextBlock Text="(*)" Foreground="Red" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                    </TextBlock>
+                    <PasswordBox MinWidth="200" Margin="5,0,0,0">
+                        <PasswordBox.Template>
+                            <ControlTemplate>
+                                <Grid>
+                                    <Grid.ColumnDefinitions></Grid.ColumnDefinitions>
+                                    <PasswordBox Grid.Column="0" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" PasswordChar="*" />
+                                    <Button BorderThickness="0" Background="Transparent" HorizontalAlignment="Right" Width="15" Grid.Column="1">
+                                        <Image Source="/Icon/eye.png"/>
+                                    </Button>
+                                </Grid>
+                            </ControlTemplate>
+                        </PasswordBox.Template>
+                    </PasswordBox>
+                </StackPanel>
+            </StackPanel>
+
+            <!--Avatar-->
+        </StackPanel>
+    </StackPanel>
+</UserControl>
