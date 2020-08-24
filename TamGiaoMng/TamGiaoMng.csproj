@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="View\Customer\frmCustomerInfo.xaml.cs">
+      <DependentUpon>frmCustomerInfo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Customer\ucCustomer.xaml.cs">
       <DependentUpon>ucCustomer.xaml</DependentUpon>
     </Compile>
@@ -67,8 +70,8 @@
     <Compile Include="View\Employee\ucEmployee.xaml.cs">
       <DependentUpon>ucEmployee.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\Employee\ucEmployeeInfo.xaml.cs">
-      <DependentUpon>ucEmployeeInfo.xaml</DependentUpon>
+    <Compile Include="View\Employee\frmEmployeeInfo.xaml.cs">
+      <DependentUpon>frmEmployeeInfo.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Employee\ucEmpOtherInfo.xaml.cs">
       <DependentUpon>ucEmpOtherInfo.xaml</DependentUpon>
@@ -97,6 +100,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="View\Customer\frmCustomerInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\Customer\ucCustomer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -113,7 +120,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\Employee\ucEmployeeInfo.xaml">
+    <Page Include="View\Employee\frmEmployeeInfo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

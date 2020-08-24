@@ -5,32 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TamGiaoMng.View.Employee"
         mc:Ignorable="d"
-        Title="ucEmployeeInfo" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+        Title="Nhân viên" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <DockPanel Background="White">
         <!--Điều khiển-->
         <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Background="LightGray" Height="30" HorizontalAlignment="Stretch" VerticalAlignment="Top">
-            <Button Height="20" Margin="15,0,0,0" BorderThickness="0" Background="LightGray">
+            <Button Height="20" Margin="10,0,0,0" BorderThickness="0" Background="LightGray">
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
-                    <Image Source="/Icon/menu_add.png" Width="15" Height="15"/>
-                    <TextBlock Text="Thêm" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
-                </StackPanel>
-            </Button>
-            <Button Height="20" Margin="5,0,0,0" BorderThickness="0" Background="LightGray">
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
-                    <Image Source="/Icon/menu_edit.png" Width="15" Height="15"/>
-                    <TextBlock Text="Sửa" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                    <Image Source="/Icon/menu_save.png" Width="15" Height="15"/>
+                    <TextBlock Text="Lưu" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
                 </StackPanel>
             </Button>
             <Button Height="20" Margin="5,0,0,0" BorderThickness="0" Background="LightGray">
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
                     <Image Source="/Icon/menu_delete.png" Width="15" Height="15"/>
                     <TextBlock Text="Xóa" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
-                </StackPanel>
-            </Button>
-            <Button Height="20" Margin="10,0,0,0" BorderThickness="0" Background="LightGray">
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
-                    <Image Source="/Icon/menu_save.png" Width="15" Height="15"/>
-                    <TextBlock Text="Lưu" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
                 </StackPanel>
             </Button>
             <Button Height="20" Margin="10,0,0,0" BorderThickness="0" Background="LightGray">
