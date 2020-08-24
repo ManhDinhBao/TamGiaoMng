@@ -87,19 +87,101 @@
                 <ComboBoxItem>Đã nghỉ làm</ComboBoxItem>
             </ComboBox>
         </StackPanel>
-        <DataGrid>
+        <DataGrid Margin="10">
             <DataGrid.Columns>
                 <DataGridTemplateColumn>
                     <DataGridTemplateColumn.HeaderTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Vertical">
-                                <TextBlock FontSize="12" FontWeight="Bold" FontFamily="Tahoma" Text="Tên đăng nhập" Margin="5" />
+                                <TextBlock MinWidth="100" FontSize="12" FontWeight="Bold" FontFamily="Tahoma" Text="Tên đăng nhập" Margin="5" />
                                 <TextBox FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="5,0,5,0" Text="manh"/>
                             </StackPanel>
-                            
                         </DataTemplate>
                     </DataGridTemplateColumn.HeaderTemplate>
                 </DataGridTemplateColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock MinWidth="250" FontSize="12" FontWeight="Bold" FontFamily="Tahoma" Text="Tên nhân viên" Margin="5" />
+                                <TextBox FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="5,0,5,0" Text="manh"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock MinWidth="100" FontSize="12" FontWeight="Bold" FontFamily="Tahoma" Text="Số điện thoại" Margin="5" />
+                                <TextBox FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="5,0,5,0" Text="manh"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock MinWidth="100" FontSize="12" FontWeight="Bold" FontFamily="Tahoma" Text="Ngày sinh" Margin="5" />
+                                <DatePicker Width="100" Margin="5,0,5,0" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Center">
+                                    <DatePicker.Resources>
+                                        <Style TargetType="{x:Type DatePickerTextBox}">
+                                            <Setter Property="Control.Template">
+                                                <Setter.Value>
+                                                    <ControlTemplate>
+                                                        <TextBox x:Name="PART_TextBox" TextAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" VerticalAlignment="Center"
+                                    Text="{Binding Path=SelectedDate, RelativeSource={RelativeSource AncestorType={x:Type DatePicker}}}" />
+                                                    </ControlTemplate>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Style>
+                                    </DatePicker.Resources>
+                                </DatePicker>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock MinWidth="100" FontSize="12" FontWeight="Bold" FontFamily="Tahoma" Text="Giới tính" Margin="5" />
+                                <ComboBox Width="100" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="5,0,0,0">
+                                    <ComboBox.Style>
+                                        <Style TargetType="ComboBox">
+                                            <Setter Property="Background" Value="White" />
+                                        </Style>
+                                    </ComboBox.Style>
+                                    <ComboBoxItem>Nam</ComboBoxItem>
+                                    <ComboBoxItem>Nữ</ComboBoxItem>
+                                    <ComboBoxItem>Khác</ComboBoxItem>
+                                </ComboBox>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock MinWidth="100" FontSize="12" FontWeight="Bold" FontFamily="Tahoma" Text="Trạng thái làm việc" Margin="5" />
+                                <ComboBox Width="100" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="5,0,0,0">
+                                    <ComboBox.Style>
+                                        <Style TargetType="ComboBox">
+                                            <Setter Property="Background" Value="White" />
+                                        </Style>
+                                    </ComboBox.Style>
+                                    <ComboBoxItem>Thử việc</ComboBoxItem>
+                                    <ComboBoxItem>Chính thức</ComboBoxItem>
+                                    <ComboBoxItem>Đã nghỉ làm</ComboBoxItem>
+                                </ComboBox>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                </DataGridTemplateColumn>
+
             </DataGrid.Columns>
         </DataGrid>
     </StackPanel>
