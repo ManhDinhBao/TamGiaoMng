@@ -76,6 +76,24 @@
     <Compile Include="View\Employee\ucEmpOtherInfo.xaml.cs">
       <DependentUpon>ucEmpOtherInfo.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Material\frmMaterialInfo.xaml.cs">
+      <DependentUpon>frmMaterialInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Material\ucMaterial.xaml.cs">
+      <DependentUpon>ucMaterial.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Product\frmProductInfo.xaml.cs">
+      <DependentUpon>frmProductInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Product\ucProduct.xaml.cs">
+      <DependentUpon>ucProduct.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Product\ucProductGeneralInfo.xaml.cs">
+      <DependentUpon>ucProductGeneralInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Product\ucProductMaterial.xaml.cs">
+      <DependentUpon>ucProductMaterial.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Setting\ucGeneralSetup.xaml.cs">
       <DependentUpon>ucGeneralSetup.xaml</DependentUpon>
     </Compile>
@@ -87,6 +105,12 @@
     </Compile>
     <Compile Include="View\Setting\ucGenSetup_Tab3.xaml.cs">
       <DependentUpon>ucGenSetup_Tab3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Supplier\frmSupplierInfo.xaml.cs">
+      <DependentUpon>frmSupplierInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Supplier\ucSupplier.xaml.cs">
+      <DependentUpon>ucSupplier.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -128,6 +152,30 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\Material\frmMaterialInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Material\ucMaterial.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Product\frmProductInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Product\ucProduct.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Product\ucProductGeneralInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Product\ucProductMaterial.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\Setting\ucGeneralSetup.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -141,6 +189,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Setting\ucGenSetup_Tab3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Supplier\frmSupplierInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Supplier\ucSupplier.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

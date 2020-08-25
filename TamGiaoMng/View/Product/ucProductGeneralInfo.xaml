@@ -1,0 +1,63 @@
+﻿<UserControl x:Class="TamGiaoMng.View.Product.ucProductGeneralInfo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TamGiaoMng.View.Product"
+             mc:Ignorable="d" 
+             HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+    <StackPanel Orientation="Horizontal" Background="White" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <StackPanel Orientation="Vertical" Background="White" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10">
+            <!--Data-->
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <StackPanel Orientation="Horizontal"  Margin="0,5,0,0">
+                    <TextBlock MinWidth="100" VerticalAlignment="Center">
+                        <TextBlock Text="Mã" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                        <TextBlock Text="(*)" Foreground="Red" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                    </TextBlock>
+                    <TextBox VerticalAlignment="Center" MinWidth="300" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="5,0,0,0"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal"  Margin="0,5,0,0">
+                    <TextBlock MinWidth="100" VerticalAlignment="Center">
+                        <TextBlock Text="Tên" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                        <TextBlock Text="(*)" Foreground="Red" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                    </TextBlock>
+                    <TextBox VerticalAlignment="Center" MinWidth="300" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="5,0,0,0"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                    <TextBlock MinWidth="100" VerticalAlignment="Center" Text="Nhóm" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                    <ComboBox VerticalAlignment="Center" MinWidth="150" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="5,0,0,0">
+                        <ComboBoxItem>Nam</ComboBoxItem>
+                        <ComboBoxItem>Nữ</ComboBoxItem>
+                        <ComboBoxItem>Khác</ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                    <TextBlock MinWidth="100" VerticalAlignment="Center" Text="Đơn vị tính" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                    <ComboBox VerticalAlignment="Center" MinWidth="150" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="5,0,0,0">
+                        <ComboBoxItem>Nam</ComboBoxItem>
+                        <ComboBoxItem>Nữ</ComboBoxItem>
+                        <ComboBoxItem>Khác</ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal"  Margin="0,5,0,0">
+                    <TextBlock MinWidth="100" VerticalAlignment="Center">
+                        <TextBlock Text="Giá bán" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                        <TextBlock Text="(*)" Foreground="Red" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                    </TextBlock>
+                    <TextBox VerticalAlignment="Center" MinWidth="100" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="5,0,0,0"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal"  Margin="0,5,0,0">
+                    <TextBlock MinWidth="100" VerticalAlignment="Center">
+                        <TextBlock Text="Giá vốn" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                    </TextBlock>
+                    <TextBox VerticalAlignment="Center" MinWidth="100" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="5,0,0,0"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                    <TextBlock Width="100" VerticalAlignment="Center" Text="Ghi chú" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                    <TextBox  TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Visible" VerticalAlignment="Center" Width="400" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="5,0,0,0"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </StackPanel>
+</UserControl>

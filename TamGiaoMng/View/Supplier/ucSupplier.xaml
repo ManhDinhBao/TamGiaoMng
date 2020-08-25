@@ -1,0 +1,94 @@
+﻿<UserControl x:Class="TamGiaoMng.View.Supplier.ucSupplier"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TamGiaoMng.View.Supplier"
+             mc:Ignorable="d" 
+             HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+    <StackPanel HorizontalAlignment="Stretch" Orientation="Vertical" Background="White">
+        <!--Điều khiển-->
+        <StackPanel Orientation="Horizontal" Background="LightGray" Height="30" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+            <Button Height="20" Margin="15,0,0,0" BorderThickness="0" Background="LightGray">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
+                    <Image Source="/Icon/menu_add.png" Width="15" Height="15"/>
+                    <TextBlock Text="Thêm" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+            <Button Height="20" Margin="5,0,0,0" BorderThickness="0" Background="LightGray">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
+                    <Image Source="/Icon/menu_search.png" Width="15" Height="15"/>
+                    <TextBlock Text="Tìm kiếm" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+            <Button Height="20" Margin="5,0,0,0" BorderThickness="0" Background="LightGray">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
+                    <Image Source="/Icon/menu_edit.png" Width="15" Height="15"/>
+                    <TextBlock Text="Sửa" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+            <Button Height="20" Margin="10,0,0,0" BorderThickness="0" Background="LightGray">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
+                    <Image Source="/Icon/menu_save.png" Width="15" Height="15"/>
+                    <TextBlock Text="Lưu" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+            <Button Height="20" Margin="10,0,0,0" BorderThickness="0" Background="LightGray">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
+                    <Image Source="/Icon/menu_refresh.png" Width="15" Height="15"/>
+                    <TextBlock Text="Cập nhật" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+        <!--Dữ liệu-->
+        <StackPanel Orientation="Horizontal" Margin="10,10,0,0">
+            <RadioButton Content="Tổ chức" FontSize="10" FontWeight="Regular" FontFamily="Tahoma"/>
+            <RadioButton Content="Cá nhân" FontSize="10" FontWeight="Regular" FontFamily="Tahoma" Margin="10,0,0,0"/>
+            <RadioButton Content="Cả hai" FontSize="10" FontWeight="Regular" FontFamily="Tahoma" Margin="10,0,0,0"/>
+        </StackPanel>
+        <DataGrid Margin="10">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock MinWidth="150" FontSize="10" FontWeight="Bold" FontFamily="Tahoma" Text="Mã nhà cung cấp" Margin="5" />
+                                <TextBox FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="5,0,5,0"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock MinWidth="250" FontSize="10" FontWeight="Bold" FontFamily="Tahoma" Text="Tên nhà cung cấp" Margin="5" />
+                                <TextBox FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="5,0,5,0"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock MinWidth="250" FontSize="10" FontWeight="Bold" FontFamily="Tahoma" Text="Địa chỉ" Margin="5" />
+                                <TextBox FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="5,0,5,0"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock MinWidth="150" FontSize="10" FontWeight="Bold" FontFamily="Tahoma" Text="Điện thoại" Margin="5" />
+                                <TextBox FontSize="12" FontWeight="Regular" FontFamily="Tahoma" Margin="5,0,5,0"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </StackPanel>
+</UserControl>

@@ -1,0 +1,120 @@
+﻿<Window x:Class="TamGiaoMng.View.Material.frmMaterialInfo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TamGiaoMng.View.Material"
+        mc:Ignorable="d"
+        Title="Thông tin NVL" Width="700" Height="47 0" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <DockPanel Background="White">
+        <!--Điều khiển-->
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Background="LightGray" Height="30" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+            <Button Height="20" Margin="10,0,0,0" BorderThickness="0" Background="LightGray">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
+                    <Image Source="/Icon/menu_save.png" Width="15" Height="15"/>
+                    <TextBlock Text="Lưu" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+            <Button Height="20" Margin="5,0,0,0" BorderThickness="0" Background="LightGray">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
+                    <Image Source="/Icon/menu_delete.png" Width="15" Height="15"/>
+                    <TextBlock Text="Xóa" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+            <Button Height="20" Margin="10,0,0,0" BorderThickness="0" Background="LightGray">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
+                    <Image Source="/Icon/menu_restore.png" Width="15" Height="15"/>
+                    <TextBlock Text="Quay lại" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+        <!--Dữ liệu-->
+        <StackPanel Orientation="Vertical" Margin="10">
+            <StackPanel Orientation="Horizontal"  Margin="0,5,0,0">
+                <TextBlock Width="100" VerticalAlignment="Center">
+                        <TextBlock Text="Mã" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                        <TextBlock Text="(*)" Foreground="Red" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                    </TextBlock>
+                <TextBox Width="200" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="5,0,0,0"/>
+                <TextBlock Width="110" VerticalAlignment="Center" Margin="20,0,0,0">
+                        <TextBlock Text="Tên" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                        <TextBlock Text="(*)" Foreground="Red" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                    </TextBlock>
+                <TextBox Width="200" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="5,0,0,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"  Margin="0,5,0,0">
+                <TextBlock Width="100" VerticalAlignment="Center">
+                        <TextBlock Text="Tính chất" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                        <TextBlock Text="(*)" Foreground="Red" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                    </TextBlock>
+                <TextBox Width="200" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="5,0,0,0"/>
+                <TextBlock Width="110" VerticalAlignment="Center" Margin="20,0,0,0">
+                        <TextBlock Text="Đơn vị tính" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                        <TextBlock Text="(*)" Foreground="Red" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                    </TextBlock>
+                <TextBox Width="200" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="5,0,0,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                <TextBlock Width="100" VerticalAlignment="Center" Text="Hạn sử dụng" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                <TextBox VerticalAlignment="Center" Width="80" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="5,0,0,0"/>
+                <ComboBox Width="80" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" Margin="5,0,0,0">
+
+                </ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                <TextBlock Width="100" VerticalAlignment="Center" Text="Ghi chú" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                <TextBox  TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Visible" VerticalAlignment="Center" Width="535" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="5,0,0,0"/>
+            </StackPanel>
+            <TabControl  Margin="0,10,0,0">
+                <TabItem Header="Nhà cung cấp" FontFamily="Tahoma" FontSize="12" FontWeight="Regular">
+                    <DataGrid Margin="10" MinHeight="200">
+                        <DataGrid.Columns>
+                            <DataGridTemplateColumn>
+                                <DataGridTemplateColumn.HeaderTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Vertical">
+                                            <TextBlock MinWidth="100" FontSize="10" FontWeight="Bold" FontFamily="Tahoma" Text="Mã NCC" Margin="5" />
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.HeaderTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn>
+                                <DataGridTemplateColumn.HeaderTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Vertical">
+                                            <TextBlock MinWidth="200" FontSize="10" FontWeight="Bold" FontFamily="Tahoma" Text="Tên" Margin="5" />
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.HeaderTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn>
+                                <DataGridTemplateColumn.HeaderTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Vertical">
+                                            <TextBlock MinWidth="240" FontSize="10" FontWeight="Bold" FontFamily="Tahoma" Text="Địa chỉ" Margin="5" />
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.HeaderTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </TabItem>
+            </TabControl>
+            <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                <Button Height="20" Width="80" HorizontalAlignment="Left" BorderThickness="0" Background="LightGray">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
+                        <Image Source="/Icon/menu_add.png" Width="15" Height="15"/>
+                        <TextBlock Text="Thêm dòng" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                    </StackPanel>
+                </Button>
+                <Button Height="20" Width="80" HorizontalAlignment="Left" Margin="10,0,0,0" BorderThickness="0" Background="LightGray">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2,2,2,2">
+                        <Image Source="/Icon/menu_delete.png" Width="15" Height="15"/>
+                        <TextBlock Text="Xóa dòng" FontFamily="Tahoma" FontSize="10" FontWeight="Regular" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+            
+        </StackPanel>
+    </DockPanel>
+</Window>
