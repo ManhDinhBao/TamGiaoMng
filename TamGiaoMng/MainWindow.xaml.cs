@@ -12,8 +12,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TamGiaoMng.View.Database;
 using TamGiaoMng.View.Employee;
 using TamGiaoMng.View.Setting;
+using TamGiaoObject;
 
 namespace TamGiaoMng
 {
@@ -22,9 +24,12 @@ namespace TamGiaoMng
     /// </summary>
     public partial class MainWindow : Window
     {
+        MDataBase dataBase;
         public MainWindow()
         {
             InitializeComponent();
+            dataBase = MSystem.LoadDBConfig();
+            this.DataContext = dataBase;
         }
         private void MenuEmployee_Click(object sender, RoutedEventArgs e)
         {
@@ -59,5 +64,11 @@ namespace TamGiaoMng
 
         }
 
+        private void StatusBarItem_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            //Show setting DB connect window
+            frmDatabaseSetting frm = new frmDatabaseSetting();
+            frm.ShowDialog();
+        }
     }
 }

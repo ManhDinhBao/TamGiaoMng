@@ -81,7 +81,7 @@
                 </StackPanel>
                 <StackPanel Orientation="Horizontal"  Margin="0,5,0,0">
                     <TextBlock MinWidth="150" VerticalAlignment="Center">
-                        <TextBlock Text="Họ và tên" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
+                        <TextBlock Text="Cấp bậc" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
                         <TextBlock Text="(*)" Foreground="Red" FontFamily="Tahoma" FontSize="12" FontWeight="Regular"/>
                     </TextBlock>
                     <RadioButton Content="Quản lý" FontFamily="Tahoma" FontSize="12" FontWeight="Regular" Margin="5,0,0,0"/>

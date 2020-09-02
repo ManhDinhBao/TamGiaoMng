@@ -9,7 +9,33 @@
     <DockPanel>
         <StackPanel DockPanel.Dock="Top" VerticalAlignment="Stretch" Height="60" HorizontalAlignment="Stretch" Background="DimGray" Orientation="Vertical">
             <Menu>
-                <MenuItem>
+                <!--Hoạt động chính-->
+                <MenuItem Margin="5,0,0,0">
+                    <MenuItem.Header>
+                    <TextBlock Text="Hoạt động chính" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                    </MenuItem.Header>
+                    <MenuItem.Icon>
+                        <Image Source="Icon/menu_home.png"/>
+                    </MenuItem.Icon>
+                    <MenuItem Header="_Bán hàng">
+                        <MenuItem.Icon>
+                            <Image Source="Icon/sell.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="_Nhập hàng">
+                        <MenuItem.Icon>
+                            <Image Source="Icon/buy.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <Separator />
+                    <MenuItem Header="_Thoát">
+                        <MenuItem.Icon>
+                            <Image Source="Icon/menu_exit.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+                <!--Quản lý chung-->
+                <MenuItem Margin="5,0,0,0">
                     <MenuItem.Header>
                         <TextBlock Text="Quản lý chung" HorizontalAlignment="Right" VerticalAlignment="Center"/>
                     </MenuItem.Header>
@@ -31,37 +57,63 @@
                             <Image Source="Icon/menu_supplier.png"/>
                         </MenuItem.Icon>
                     </MenuItem>
-                    <Separator />
-                    <MenuItem Header="_Thoát">
+                    <MenuItem Header="_Nguyên vật liệu">
                         <MenuItem.Icon>
-                            <Image Source="Icon/menu_exit.png"/>
+                            <Image Source="Icon/material.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="_Sản phẩm">
+                        <MenuItem.Icon>
+                            <Image Source="Icon/product.png"/>
                         </MenuItem.Icon>
                     </MenuItem>
                 </MenuItem>
-                <MenuItem Header="_Kho" Margin="5,0,0,0">
-                    <MenuItem Header="_Nhập kho">
-                        <MenuItem.Icon>
-                            <Image Source="Icon/menu_employee.png"/>
-                        </MenuItem.Icon>
-                    </MenuItem>
-                    <MenuItem Header="_Xuất kho" />
-                    <MenuItem Header="_Tồn kho" />
-                </MenuItem>
-                <MenuItem Header="_Kho" Margin="5,0,0,0">
+                
+                <!--Kho-->
+                <MenuItem Margin="5,0,0,0">
+                    <MenuItem.Header>
+                        <TextBlock Text="Kho" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                    </MenuItem.Header>
                     <MenuItem.Icon>
-                        <Image Source="Icon/menu_employee.png"/>
+                        <Image Source="Icon/warehouse.png"/>
                     </MenuItem.Icon>
                     <MenuItem Header="_Nhập kho">
                         <MenuItem.Icon>
-                            <Image Source="Icon/menu_employee.png"/>
+                            <Image Source="Icon/import.png"/>
                         </MenuItem.Icon>
                     </MenuItem>
-                    <MenuItem Header="_Xuất kho" />
-                    <MenuItem Header="_Tồn kho" />
+                    <MenuItem Header="_Xuất kho">
+                        <MenuItem.Icon>
+                            <Image Source="Icon/export.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="_Chuyển kho">
+                        <MenuItem.Icon>
+                            <Image Source="Icon/transfer.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="_Kiểm kê">
+                        <MenuItem.Icon>
+                            <Image Source="Icon/checklist.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="_Thống kê tồn kho">
+                        <MenuItem.Icon>
+                            <Image Source="Icon/report.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
                 </MenuItem>
             </Menu>
 
         </StackPanel>
+        <StatusBar DockPanel.Dock="Bottom" HorizontalAlignment="Stretch">
+            <StatusBarItem MouseDoubleClick="StatusBarItem_MouseDoubleClick">
+                <StackPanel Orientation="Horizontal">
+                    <Image x:Name="imgDBConnectStt" Width="20" Height="20" Source="{Binding ImageSrc}"/>
+                    <TextBlock x:Name="tbDBConnectStt" Text="{Binding Status}" TextAlignment="Center" FontFamily="Tahoma" FontSize="12" Margin="5,0,0,0" Padding="0,3,0,0"/>
+                </StackPanel>
+            </StatusBarItem>
+        </StatusBar>
         <TabControl x:Name="tabMain" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
             <TabControl.Resources>
                 <Style TargetType="{x:Type TabItem}">
@@ -82,5 +134,7 @@
                 </Style>
             </TabControl.Resources>
         </TabControl>
+        
     </DockPanel>
+    
 </Window>

@@ -61,6 +61,9 @@
     <Compile Include="View\Customer\ucCustomer.xaml.cs">
       <DependentUpon>ucCustomer.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Database\frmDatabaseSetting.xaml.cs">
+      <DependentUpon>frmDatabaseSetting.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Employee\ucEmpContactInfo.xaml.cs">
       <DependentUpon>ucEmpContactInfo.xaml</DependentUpon>
     </Compile>
@@ -129,6 +132,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Customer\ucCustomer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Database\frmDatabaseSetting.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -255,6 +262,44 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Icon\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon\connected.png" />
+    <Resource Include="Icon\disconnect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLFile\DBConfig.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TamGiaoObject\TamGiaoObject.csproj">
+      <Project>{CE358CF1-4188-4C59-AD9B-1333F5D6A5B4}</Project>
+      <Name>TamGiaoObject</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon\material.png" />
+    <Resource Include="Icon\product.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon\warehouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon\export.png" />
+    <Resource Include="Icon\import.png" />
+    <Resource Include="Icon\transfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon\checklist.png" />
+    <Resource Include="Icon\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon\menu_home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon\buy.png" />
+    <Resource Include="Icon\sell.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
